@@ -4,53 +4,53 @@
 }
 
 .teams__swiper {
-    margin-left: auto;
-    margin-right: auto;
     position: relative;
+    z-index: 1;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
     overflow: hidden;
     list-style: none;
-    padding: 0;
-    z-index: 1;
 }
 
 .teams__item {
     display: inline-block;
-    overflow: visible;
     box-sizing: border-box;
     min-width: 5rem;
     margin: 0.4rem 0.4rem 0 0;
     padding: 0.2rem 1rem;
-    cursor: pointer;
-    text-align: center;
-    vertical-align: middle;
-    white-space: nowrap;
-    text-decoration: none;
-    text-transform: none;
-    border: 2px solid #53bce6;
-    border-radius: 1.667rem;
-    font-family: "Montserrat", sans-serif;
-    font-size:  1rem;
+    overflow: visible;
+    color: #000000;
     font-weight: 600;
-    line-height: 1.778rem;
-    color: #000;
-    background-color: #fff;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    white-space: nowrap;
+    text-align: center;
+    text-transform: none;
+    text-decoration: none;
+    vertical-align: middle;
+    background-color: #ffffff;
+    border: 2px solid #53bce6;
+    border-radius: 1.67rem;
+    cursor: pointer;
     transition: linear 0.2s;
 }
 
 @media (min-width: 768px) {
     .teams__item {
-        min-width: 11.888rem;
-        margin: 0.8889rem 0.8889rem 0 0;
+        min-width: 11.89rem;
+        margin: 0.89rem 0.89rem 0 0;
         padding: 0.4rem 1rem;
+        font-size: 1.11rem;
+        font-family: 'Montserrat', sans-serif;
         border-width: 3px;
-        border-radius: 1.667rem;
-        font-family: "Montserrat", sans-serif;
-        font-size:  1.111rem;
+        border-radius: 1.67rem;
     }
 }
 
 .teams__item:hover {
-    background-color: rgba(83, 188, 230, 0.1);
+    background-color: #53bce619;
 }
 
 .teams__item--active {
@@ -70,11 +70,11 @@
 .teams__swiper .swiper-button-prev {
     position: absolute;
     top: 0;
-    margin-top: 0;
-    color: #fff;
-    background-color: #53bce6;
-    height: 32px;
     width: 32px;
+    height: 32px;
+    margin-top: 0;
+    color: #ffffff;
+    background-color: #53bce6;
     border-radius: 50%;
     opacity: 0.7;
 }
@@ -101,8 +101,8 @@
 
 .teams__swiper .swiper-button-next::after,
 .teams__swiper .swiper-button-prev::after {
-    font-size: 16px;
     font-weight: 700;
+    font-size: 16px;
 }
 
 .teams__swiper .swiper-button-next::after {
@@ -112,4 +112,3 @@
 .teams__swiper .swiper-button-prev::after {
     transform: translateX(-0.09rem);
 }
-

@@ -10,10 +10,10 @@ const getTop = () => window.pageYOffset || document.documentElement.scrollTop;
 
 const updateDashoffset = () => {
     const height = document.documentElement.scrollHeight - window.innerHeight;
-    const dashoffset = pathLength - (getTop() * pathLength / height)
+    const dashoffset = pathLength - (getTop() * pathLength / height);
 
     scrollUpSvgPath.style.strokeDashoffset = dashoffset;
-}
+};
 
 window.addEventListener('scroll', () => {
     updateDashoffset();
@@ -28,6 +28,6 @@ window.addEventListener('scroll', () => {
 scrollUp.addEventListener('click', () => {
     window.scrollTo({
         top: 0,
-        behavior: 'smooth'
+        behavior: 'smooth',
     });
 });

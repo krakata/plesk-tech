@@ -28,50 +28,50 @@
     margin: 8px 0 0 8px;
     padding: 8px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 4px 48px rgba(0, 0, 0, 0.08);
+    background-color: #ffffffe5;
     border-radius: 8px;
+    box-shadow: 0 4px 48px #00000014;
 }
 
 .navigation__item::before {
-    content: "";
+    content: '';
     display: block;
-    margin: 0 auto 8px ;
     width: 32px;
     height: 32px;
+    margin: 0 auto 8px;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .navigation__item--product::before {
-    background-image: url("/images/product-nav.svg");
+    background-image: url('/images/product-nav.svg');
 }
 
 .navigation__item--people::before {
-    background-image: url("/images/people-nav.svg");
+    background-image: url('/images/people-nav.svg');
 }
 
 .navigation__item--process::before {
-    background-image: url("/images/process-nav.svg");
+    background-image: url('/images/process-nav.svg');
 }
 
 .navigation__link {
     display: block;
     margin: auto;
     padding: 4px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 0.9rem;
-    line-height: 1.6;
+    color: #ffffff;
     font-weight: 600;
+    font-size: 0.9rem;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
     text-align: center;
-    color: #fff;
     text-decoration: none;
-    border-radius: 40px;
     background-color: #009bec;
+    border-radius: 40px;
 }
 
 .navigation__link:hover {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     background-color: #0085ca;
 }
@@ -93,21 +93,21 @@
 
     .navigation__link {
         padding: 8px;
-        font-family: "Montserrat", sans-serif;
         font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
     }
 
     .navigation__item::before {
-        margin: 0 auto 12px ;
         width: 64px;
         height: 64px;
+        margin: 0 auto 12px;
     }
 }
 
 @media (min-width: 769px) {
     .navigation__list {
         margin: 0 0 0 -30px;
-        padding: 1.778rem 0;
+        padding: 1.78rem 0;
     }
 
     .navigation__item {
@@ -118,14 +118,13 @@
     .navigation__link {
         max-width: 13.33rem;
         padding: 10px 24px;
-        font-size: 1.556rem;
         font-weight: 700;
+        font-size: 1.56rem;
     }
 
     .navigation__item::before {
-        margin-bottom: 24px;
         width: 128px;
         height: 128px;
+        margin-bottom: 24px;
     }
-
 }

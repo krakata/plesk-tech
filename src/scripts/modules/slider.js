@@ -1,6 +1,8 @@
+
+/* eslint-disable no-unused-vars, no-undef */
+
 const swiper = new Swiper('.swiper-container', {
     watchOverflow: true,
-    // loop: true,
 
     pagination: {
         el: '.swiper-pagination',
@@ -24,10 +26,10 @@ const teams = [
     'Solus',
     'Tools &amp;&nbsp;Infrastructure',
     'Technical writing &amp;&nbsp;Localization',
-    'Program Managers'
+    'Program Managers',
 ];
 
-const swiperTeams = new Swiper ('.teams__swiper', {
+const swiperTeams = new Swiper('.teams__swiper', {
     spaceBetween: 100,
     speed: 600,
     autoHeight: true,
@@ -37,7 +39,7 @@ const swiperTeams = new Swiper ('.teams__swiper', {
         clickable: true,
         bulletClass: 'teams__item',
         bulletActiveClass: 'teams__item--active',
-        renderBullet: function (index, className) {
+        renderBullet: function(index, className) {
             return '<button type="button" class="' + className + '">' + (teams[index]) + '</button>';
         },
     },
@@ -47,3 +49,5 @@ const swiperTeams = new Swiper ('.teams__swiper', {
         prevEl: '.swiper-button-prev',
     },
 });
+
+/* eslint-enable no-unused-vars, no-undef */

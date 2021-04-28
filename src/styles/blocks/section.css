@@ -1,12 +1,12 @@
 .section {
-    padding: 1.778rem 0;
+    padding: 1.78rem 0;
 }
 
 .section--people,
 .section--progress,
 .section--process,
 .section--vacancies {
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 .section--about {
@@ -14,8 +14,8 @@
 }
 
 .section__media {
-    max-width: 70vw;
     min-width: 0;
+    max-width: 70vw;
     margin: 1rem auto 0;
 }
 
@@ -25,7 +25,7 @@
 
 @media (min-width: 769px) {
     .section {
-        padding: 3.556rem 0;
+        padding: 3.56rem 0;
     }
 
     .section__media {
@@ -37,13 +37,13 @@
     }
 
     .section--product .section__description {
-        align-self: center;
         order: 1;
+        align-self: center;
     }
 
     .section--product .section__media {
-        margin-right: 3%;
         flex: 1 0 50%;
+        margin-right: 3%;
     }
 
     .section--people .section__block {
@@ -64,13 +64,13 @@
     }
 
     .section--traditions .section__description {
-        align-self: center;
         order: 1;
+        align-self: center;
     }
 
     .section--traditions .section__media {
-        margin-right: 3%;
         flex: 1 0 50%;
+        margin-right: 3%;
     }
 }
 
@@ -85,22 +85,22 @@
 }
 
 .progress__column {
+    min-height: 11ch;
     padding-left: 20%;
     background: 0 0 no-repeat;
     background-size: 15% auto;
-    min-height: 11ch;
 }
 
 .progress__column:nth-child(1) {
-    background-image: url("/images/progress1.svg");
+    background-image: url('/images/progress1.svg');
 }
 
 .progress__column:nth-child(2) {
-    background-image: url("/images/progress2.svg");
+    background-image: url('/images/progress2.svg');
 }
 
 .progress__column:nth-child(3) {
-    background-image: url("/images/progress3.svg");
+    background-image: url('/images/progress3.svg');
 }
 
 @media (min-width: 768px) {
@@ -115,12 +115,12 @@
     }
 
     .progress__column {
-        padding: 110px 0 0;
-        background: 50% 0 no-repeat;
-        background-size: 96px 96px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 110px 0 0;
+        background: 50% 0 no-repeat;
+        background-size: 96px 96px;
     }
 
     .progress__title {
@@ -136,13 +136,13 @@
 
 .benefits__column--health {
     padding-left: 20%;
-    background: url("/images/benefits1.svg") 0 0 no-repeat;
+    background: url('/images/benefits1.svg') 0 0 no-repeat;
     background-size: 15% auto;
 }
 
 .benefits__column--lifestyle {
     padding-left: 20%;
-    background: url("/images/benefits2.svg") 0 0 no-repeat;
+    background: url('/images/benefits2.svg') 0 0 no-repeat;
     background-size: 15% auto;
 }
 
@@ -168,18 +168,17 @@
 }
 
 .lead {
-    font-size: 1.8rem;
     font-weight: 300;
+    font-size: 1.8rem;
 }
 
 .footnote {
-    font-size: 0.7778rem;
+    font-size: 0.78rem;
 }
 
 .process__title {
-    font-size: 1.556rem;
-    line-height: 1.889rem;
     color: #5e7389;
+    font-size: 1.56rem;
 }
 
 @media (min-width: 768px) {
@@ -199,12 +198,12 @@
     }
 
     .progress__column {
-        padding: 110px 0 0;
-        background: 50% 0 no-repeat;
-        background-size: 96px 96px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 110px 0 0;
+        background: 50% 0 no-repeat;
+        background-size: 96px 96px;
     }
 
     .process__title {
@@ -218,11 +217,10 @@
     }
 }
 
-
 .vacancies__list {
     padding: 0;
+    font-size: 1.56rem;
     list-style: none;
-    font-size: 1.556rem;
 }
 
 .vacancies__item {
@@ -231,17 +229,13 @@
 }
 
 .vacancies__item::before {
-    content: "";
     position: absolute;
-    width: 23px;
-    height: 32px;
     top: 1.2rem;
     left: 0;
-    background: url("/images/hot.svg") 0 0 no-repeat;
-}
-
-.vacancies__item:not(.vacancies__item--hot)::before {
-    filter: grayscale(1);
+    width: 23px;
+    height: 32px;
+    background: url('/images/hot.svg') 0 0 no-repeat;
+    content: '';
 }
 
 .vacancies__item,
@@ -255,7 +249,7 @@
 }
 
 .section--about {
-    color: #fff;
+    color: #ffffff;
 }
 
 .section--about .lead {
@@ -280,11 +274,7 @@
 
 .about__link,
 .about__link:hover {
-    color: #fff;
-}
-
-.about__link:hover > span {
-    background-color: rgba(255,255,255,.1);
+    color: #ffffff;
 }
 
 .about__link .icon {
@@ -301,8 +291,8 @@
 }
 
 .about__note {
+    font-size: 1.11rem;
     text-align: center;
-    font-size: 1.111rem;
 }
 
 @media (min-width: 769px) {
@@ -311,13 +301,13 @@
     }
 
     .section--about .section__description {
-        align-self: center;
         order: 1;
+        align-self: center;
     }
 
     .section--about .section__media {
-        margin-right: 3%;
         flex: 1 0 40%;
+        margin-right: 3%;
     }
 
     .about__list--bottom {
@@ -345,7 +335,7 @@
     }
 
     .about__note {
+        font-size: 1.11rem;
         text-align: center;
-        font-size: 1.111rem;
     }
 }
