@@ -1,0 +1,43 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "eleventy --serve --quiet",
+    "stylelint": "stylelint \"src/styles/**/*.css\"",
+    "eslint": "eslint src/**/*.js",
+    "test": "npm run stylelint && npm run eslint",
+    "build": "eleventy && gulp build",
+    "deploy": "cd dist && rsync -rva --delete dist/ . plesktech@plesk.tech:~/httpdocs"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.12",
+    "autoprefixer": "^10.2.5",
+    "del": "^6.0.0",
+    "eslint": "^7.22.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-rev": "^9.0.0",
+    "gulp-rev-rewrite": "^4.0.0",
+    "gulp-terser": "^2.0.1",
+    "html-minifier": "^4.0.0",
+    "postcss": "^8.2.8",
+    "postcss-color-hex-alpha": "^7.0.0",
+    "postcss-csso": "^5.0.0",
+    "postcss-import": "^14.0.0",
+    "pretty-data": "^0.40.0",
+    "rollup-stream": "^1.24.1",
+    "stylelint": "^13.12.0",
+    "stylelint-order": "^4.1.0",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-paths": "^3.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "browserslist": [
+    "last 2 version",
+    "not dead",
+    "not ie <= 11"
+  ]
+}

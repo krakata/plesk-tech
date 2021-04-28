@@ -1,0 +1,144 @@
+/* Content */
+
+.content {
+    position: relative;
+    max-width: 1272px;
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+img {
+    height: auto;
+}
+
+/* Headings */
+
+h1, h2, h3, h4 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 64px;
+    line-height: 1.22;
+    color: #fff;
+}
+h2 {
+    font-size: 3.111rem;
+    line-height: 1.5;
+    color: #222;
+}
+
+h2.section__title {
+    position: relative;
+}
+
+h2.section__title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 2.444rem;
+    height: 6px;
+    background-color: #53bce7;
+}
+
+h3 {
+    font-size: 2.06rem;
+    line-height: 2.444rem;
+    color: #414e5a;
+}
+
+h4 {
+    font-weight: 600;
+    font-size: 1.15rem;
+    line-height: 1.778rem;
+    color: #5e7389;
+}
+
+/* Links */
+
+a {
+    color: #53bce6;
+    text-decoration: none;
+    transition: 0.2s linear;
+}
+
+a:hover {
+    color: #03ade4;
+    text-decoration: underline;
+}
+
+/* Lists */
+
+.list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.list li {
+    position: relative;
+}
+
+/* Unordered Lists */
+
+.list > li {
+    padding-left: 22px;
+}
+
+.list > .list__title {
+    padding-left: 0;
+}
+
+.list > .list__title::before {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .list > li {
+        padding-left: 30px;
+    }
+}
+
+.list > li::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    color: var(--color-grey-lighter);
+    /* font-size: 18px; */
+    font-stretch: expanded;
+    content: '—';
+}
+
+/* Ordered Lists */
+
+ol.list {
+    counter-reset: list;
+}
+
+ol.list > li::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--color-grey-lighter);
+    font-size: 14px;
+    font-stretch: expanded;
+    counter-increment: list;
+    content: counter(list);
+}
+
+@media (min-width: 1240px) {
+    ol.list > li::before {
+        font-size: 18px;
+    }
+}
+
+.icon {
+    display: block;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    fill: currentColor;
+}

@@ -1,0 +1,13 @@
+.footer__content {
+    padding-top: 1.111rem;
+    padding-bottom: 1.111rem;
+    text-align: center;
+    color: #ebcff5;
+    background-color: #6b428b;
+}
+
+@media (min-width: 1273px) {
+    .footer__content {
+        border-radius: 0 0 20px 20px;
+    }
+}

@@ -1,0 +1,45 @@
+/* Page */
+
+.page,
+.page__body {
+    min-height: 100vh;
+}
+
+.page {
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #464646;
+    background-color: #e4e7f1;
+    scroll-behavior: smooth;
+}
+
+/* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
+@media (min-width: 320px) {
+    .page {
+        font-size: calc(14px + 4 * ((100vw - 320px) / 952));
+    }
+}
+@media (min-width: 1272px) {
+    .page {
+        font-size: 18px;
+    }
+}
+
+.page__body {
+    margin: 0;
+    line-height: 1.6;
+}
+
+@media (min-width: 1273px) {
+    .page__wrapper {
+        margin: 0 auto;
+        padding: 2rem 0;
+        max-width: 1272px;
+    }
+}
+
+
+.flow > * + * {
+    margin-top: var(--flow-space, 1em);
+}

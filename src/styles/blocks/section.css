@@ -1,0 +1,351 @@
+.section {
+    padding: 1.778rem 0;
+}
+
+.section--people,
+.section--progress,
+.section--process,
+.section--vacancies {
+    background-color: #fff;
+}
+
+.section--about {
+    background-color: #8b53b7;
+}
+
+.section__media {
+    max-width: 70vw;
+    min-width: 0;
+    margin: 1rem auto 0;
+}
+
+.section--traditions .section__media {
+    max-width: none;
+}
+
+@media (min-width: 769px) {
+    .section {
+        padding: 3.556rem 0;
+    }
+
+    .section__media {
+        margin: 0;
+    }
+
+    .section--product .section__block {
+        display: flex;
+    }
+
+    .section--product .section__description {
+        align-self: center;
+        order: 1;
+    }
+
+    .section--product .section__media {
+        margin-right: 3%;
+        flex: 1 0 50%;
+    }
+
+    .section--people .section__block {
+        display: flex;
+        align-items: center;
+    }
+
+    .section--people .section__description {
+        margin-right: 3%;
+    }
+
+    .section--people .section__media {
+        flex: 1 0 50%;
+    }
+
+    .section--traditions .section__block {
+        display: flex;
+    }
+
+    .section--traditions .section__description {
+        align-self: center;
+        order: 1;
+    }
+
+    .section--traditions .section__media {
+        margin-right: 3%;
+        flex: 1 0 50%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .section--product .section__media {
+        flex-basis: 57%;
+    }
+
+    .section--people .section__media {
+        flex-basis: 64%;
+    }
+}
+
+.progress__column {
+    padding-left: 20%;
+    background: 0 0 no-repeat;
+    background-size: 15% auto;
+    min-height: 11ch;
+}
+
+.progress__column:nth-child(1) {
+    background-image: url("/images/progress1.svg");
+}
+
+.progress__column:nth-child(2) {
+    background-image: url("/images/progress2.svg");
+}
+
+.progress__column:nth-child(3) {
+    background-image: url("/images/progress3.svg");
+}
+
+@media (min-width: 768px) {
+    .section--progress .section__title {
+        text-align: center;
+    }
+
+    .progress {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+    }
+
+    .progress__column {
+        padding: 110px 0 0;
+        background: 50% 0 no-repeat;
+        background-size: 96px 96px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .progress__title {
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .progress__column br {
+        display: none;
+    }
+}
+
+.benefits__column--health {
+    padding-left: 20%;
+    background: url("/images/benefits1.svg") 0 0 no-repeat;
+    background-size: 15% auto;
+}
+
+.benefits__column--lifestyle {
+    padding-left: 20%;
+    background: url("/images/benefits2.svg") 0 0 no-repeat;
+    background-size: 15% auto;
+}
+
+@media (min-width: 768px) {
+    .benefits {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+    }
+
+    .benefits__column--health {
+        max-width: 44ch;
+        padding-left: 40%;
+        background-size: 33%;
+    }
+
+    .benefits__column--lifestyle {
+        max-width: 46ch;
+        margin-left: auto;
+        padding-left: 44%;
+        background-size: 38%;
+    }
+}
+
+.lead {
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.footnote {
+    font-size: 0.7778rem;
+}
+
+.process__title {
+    font-size: 1.556rem;
+    line-height: 1.889rem;
+    color: #5e7389;
+}
+
+@media (min-width: 768px) {
+    .section--process .section__title {
+        text-align: center;
+    }
+
+    .section--process .section__title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .process {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+    }
+
+    .progress__column {
+        padding: 110px 0 0;
+        background: 50% 0 no-repeat;
+        background-size: 96px 96px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .process__title {
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .process__column br {
+        display: none;
+    }
+}
+
+
+.vacancies__list {
+    padding: 0;
+    list-style: none;
+    font-size: 1.556rem;
+}
+
+.vacancies__item {
+    position: relative;
+    padding-left: 40px;
+}
+
+.vacancies__item::before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 32px;
+    top: 1.2rem;
+    left: 0;
+    background: url("/images/hot.svg") 0 0 no-repeat;
+}
+
+.vacancies__item:not(.vacancies__item--hot)::before {
+    filter: grayscale(1);
+}
+
+.vacancies__item,
+.vacancies__item::before {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.vacancies__item + .vacancies__item {
+    border-top: 1px solid #d0d2e3;
+}
+
+.section--about {
+    color: #fff;
+}
+
+.section--about .lead {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    text-align: center;
+}
+
+.about__list {
+    padding: 0;
+    list-style: none;
+}
+
+.about__item + .about__item {
+    margin-top: 1rem;
+}
+
+.about__list .about__link {
+    display: flex;
+    align-items: center;
+}
+
+.about__link,
+.about__link:hover {
+    color: #fff;
+}
+
+.about__link:hover > span {
+    background-color: rgba(255,255,255,.1);
+}
+
+.about__link .icon {
+    flex: none;
+    width: 48px;
+    height: 48px;
+    margin-right: 1rem;
+    opacity: 0.7;
+    transition: 0.2s linear;
+}
+
+.about__link:hover .icon {
+    opacity: 1;
+}
+
+.about__note {
+    text-align: center;
+    font-size: 1.111rem;
+}
+
+@media (min-width: 769px) {
+    .section--about .section__block {
+        display: flex;
+    }
+
+    .section--about .section__description {
+        align-self: center;
+        order: 1;
+    }
+
+    .section--about .section__media {
+        margin-right: 3%;
+        flex: 1 0 40%;
+    }
+
+    .about__list--bottom {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .about__list--bottom .about__item + .about__item {
+        margin-top: 0;
+    }
+
+    .about__list--bottom .about__link {
+        display: inline;
+    }
+
+    .about__list--bottom .about__link .icon {
+        margin: 2rem auto 1rem;
+    }
+
+    .about__list--bottom .about__item {
+        flex: 1;
+        min-width: 0;
+        max-width: 22ch;
+        text-align: center;
+    }
+
+    .about__note {
+        text-align: center;
+        font-size: 1.111rem;
+    }
+}
