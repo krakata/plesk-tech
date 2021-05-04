@@ -266,11 +266,13 @@
     list-style: none;
 }
 
-.about__item + .about__item {
+.about__item + .about__item,
+.social__item + .social__item {
     margin-top: 1rem;
 }
 
-.about__list .about__link {
+.about__list .about__link,
+.social__list .social__link {
     display: flex;
     align-items: center;
 }
