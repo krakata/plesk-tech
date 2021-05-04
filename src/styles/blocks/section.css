@@ -145,16 +145,18 @@
     }
 }
 
-.benefits__column--health {
+.benefits__column {
     padding-left: 20%;
-    background: url('/images/benefits1.svg') 0 0 no-repeat;
+    background: 0 0 no-repeat;
     background-size: 15% auto;
 }
 
+.benefits__column--health {
+    background-image: url('/images/benefits1.svg');
+}
+
 .benefits__column--lifestyle {
-    padding-left: 20%;
-    background: url('/images/benefits2.svg') 0 0 no-repeat;
-    background-size: 15% auto;
+    background-image: url('/images/benefits2.svg');
 }
 
 @media (min-width: 768px) {
@@ -164,17 +166,17 @@
         grid-gap: 2rem;
     }
 
-    .benefits__column--health {
-        max-width: 44ch;
-        padding-left: 40%;
-        background-size: 33%;
+    .benefits__column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 80px 3vw 0;
+        background-position: 50% 0;
+        background-size: auto 64px;
     }
 
-    .benefits__column--lifestyle {
-        max-width: 46ch;
-        margin-left: auto;
-        padding-left: 44%;
-        background-size: 38%;
+    .progress__title {
+        text-align: center;
     }
 }
 
