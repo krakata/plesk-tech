@@ -133,10 +133,6 @@
         background: 50% 0 no-repeat;
         background-size: 96px 96px;
     }
-
-    .progress__title {
-        text-align: center;
-    }
 }
 
 @media (max-width: 767px) {
