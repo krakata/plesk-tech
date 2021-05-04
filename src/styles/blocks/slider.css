@@ -22,7 +22,7 @@
     overflow: visible;
     color: #000000;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 0.78rem;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     white-space: nowrap;
@@ -31,26 +31,20 @@
     text-decoration: none;
     vertical-align: middle;
     background-color: #ffffff;
-    border: 2px solid #53bce6;
-    border-radius: 1.67rem;
+    border: 1px solid #53bce6;
+    border-radius: 20px;
     cursor: pointer;
     transition: linear 0.2s;
 }
 
-@media (min-width: 768px) {
-    .teams__item {
-        min-width: 11.89rem;
-        margin: 0.89rem 0.89rem 0 0;
-        padding: 0.4rem 1rem;
-        font-size: 1.11rem;
-        font-family: 'Montserrat', sans-serif;
-        border-width: 3px;
-        border-radius: 1.67rem;
-    }
+.teams__item:hover,
+.teams__item:focus {
+    background-color: #cbf0fd;
+    border-color: #03ade4;
 }
 
-.teams__item:hover {
-    background-color: #53bce619;
+.teams__item:focus {
+    outline: none;
 }
 
 .teams__item--active {

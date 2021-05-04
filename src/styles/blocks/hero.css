@@ -1,0 +1,27 @@
+/* Hero */
+
+.hero {
+    position: relative;
+    height: 50vw;
+    min-height: 190px;
+    overflow: hidden;
+}
+
+.hero {
+    background: #e9ebec url('/images/hero.png') 50% 0 no-repeat;
+    background-size: auto 100%;
+}
+
+.hero .hero__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+@media (min-width: 769px) {
+    .hero {
+        height: 408px;
+    }
+}

@@ -10,21 +10,13 @@
     font-weight: 400;
     font-size: clamp(14px, 5vw, 18px);
     font-family: 'Nunito', sans-serif;
-    background-color: #e4e7f1;
+    background-color: #f8f9fd;
     scroll-behavior: smooth;
 }
 
 .page__body {
     margin: 0;
     line-height: 1.6;
-}
-
-@media (min-width: 1273px) {
-    .page__wrapper {
-        max-width: 1272px;
-        margin: 0 auto;
-        padding: 2rem 0;
-    }
 }
 
 .flow > * + * {

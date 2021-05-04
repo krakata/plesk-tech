@@ -27,7 +27,7 @@ gulp.task('styles', () => {
 
 // Scripts
 
-gulp.task('scripts', function() {
+gulp.task('scripts', () => {
     return rollup({
         input: 'dist/scripts/index.js',
         format: 'iife',
@@ -98,6 +98,7 @@ gulp.task('clean', () => {
         'dist/styles/**/*',
         '!dist/styles/styles-*.css',
         'dist/scripts/**/*',
+        '!dist/scripts/vendor',
         'dist/rev.json',
     ]);
 });

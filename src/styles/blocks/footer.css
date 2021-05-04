@@ -1,13 +1,10 @@
+.footer {
+    background-color: #2b2f39;
+}
+
 .footer__content {
     padding-top: 1.11rem;
     padding-bottom: 1.11rem;
-    color: #ebcff5;
+    color: #8e91ad;
     text-align: center;
-    background-color: #6b428b;
-}
-
-@media (min-width: 1273px) {
-    .footer__content {
-        border-radius: 0 0 20px 20px;
-    }
 }

@@ -3,7 +3,6 @@ title: Plesk
 layout: layouts/page.njk
 permalink: index.html
 ---
-{% include 'sections/navigation.njk' %}
 
 <main class="main">
     {{ content | safe }}
@@ -11,6 +10,8 @@ permalink: index.html
     {% include 'sections/product.njk' %}
 
     {% include 'sections/people.njk' %}
+
+    {% include 'sections/teams.njk' %}
 
     {% include 'sections/traditions.njk' %}
 
@@ -20,11 +21,11 @@ permalink: index.html
 
     {% include 'sections/process.njk' %}
 
-    {% include 'sections/teams.njk' %}
-
     {% include 'sections/vacancies.njk' %}
 
     {% include 'sections/about.njk' %}
+
+    {% include 'sections/social.njk' %}
 </main>
 
 <button class="scroll-up" type="button" aria-label="Вернуться к началу">
