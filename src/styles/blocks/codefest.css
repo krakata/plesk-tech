@@ -51,3 +51,11 @@
     font-size: 0.78rem;
     line-height: 2.01;
 }
+
+.codefest-program__table a {
+    color: #464646;
+}
+
+.codefest-program__table a:hover {
+    color: #03ade4;
+}
