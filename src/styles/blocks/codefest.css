@@ -1,0 +1,53 @@
+.codefest-program__title {
+    font-size: 1.56rem;
+}
+
+.codefest-program__table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+.codefest-program__title + .codefest-program__table {
+    --flow-space: 0;
+}
+
+.codefest-program__table + .codefest-program__title {
+    --flow-space: 3rem;
+}
+
+.codefest-program__table caption {
+    font-weight: 700;
+    font-size: 1.22rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+}
+
+.codefest-program__table td {
+    padding: 0.89rem 0 0.89rem 1.11rem;
+    vertical-align: top;
+}
+
+.codefest-program__table tr + tr td {
+    border-top: 1px solid #d0d2e3;
+}
+
+.codefest-program__table .codefest-program__time-cell {
+    width: 16%;
+    padding-left: 0;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.codefest-program__table .codefest-program__speaker-cell {
+    width: 33.33%;
+}
+
+.codefest-program__speaker {
+    font-weight: 600;
+}
+
+.codefest-program__subtitle {
+    color: #5e7389;
+    font-size: 0.78rem;
+    line-height: 2.01;
+}
