@@ -1,13 +1,18 @@
 /* Header */
 
 .header {
-    position: absolute;
     top: 0;
     left: 0;
     z-index: 100;
     width: 100%;
     background-color: #ffffff00;
     transition: 0.6s;
+}
+
+@media (min-width: 769px) {
+    .header {
+        position: absolute;
+    }
 }
 
 .header__content {
